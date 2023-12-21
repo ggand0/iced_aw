@@ -68,7 +68,10 @@ once_cell = { version = "1.18.0", optional = true }
 [dependencies.iced_widget]
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "8221794"
-version = "0.1.1"
+#version = "0.1.1"
+git = "https://github.com/ggand0/iced.git"
+#rev = "2e7fe0bf7a1ef66f45b8484914131a8d142137f0"
+rev = "3d2576b533ad0083a679b405a846cc276a1d546b"
 
 [profile.dev.package."*"]
 opt-level = 2
