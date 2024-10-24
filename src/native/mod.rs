@@ -115,6 +115,7 @@ pub mod quad;
 pub mod spinner;
 
 #[cfg(feature = "spinner")]
+#[cfg(not(target_arch = "wasm32"))]
 /// A spinner widget, a circle spinning around the center of the widget.
 pub type Spinner<Renderer> = spinner::Spinner<Renderer>;
 

@@ -5,6 +5,7 @@
 use iced_widget::style::Theme;
 
 /// The style of a [`Spinner`](crate::native::spinner::Spinner).
+#[cfg(not(target_arch = "wasm32"))]
 #[derive(Default)]
 #[allow(missing_debug_implementations)]
 pub enum SpinnerStyle {
@@ -20,6 +21,7 @@ pub enum SpinnerStyle {
 pub struct Appearance {}
 
 /// A set of rules that dictate the style of a [`Spinner`](crate::native::spinner::Spinner).
+#[cfg(not(target_arch = "wasm32"))]
 pub trait StyleSheet {
     /// Style for the trait to use.
     type Style: Default;

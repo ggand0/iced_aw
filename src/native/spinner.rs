@@ -21,6 +21,7 @@ use crate::style::spinner::StyleSheet;
 
 /// A spinner widget, a circle spinning around the center of the widget.
 #[allow(missing_debug_implementations)]
+#[cfg(not(target_arch = "wasm32"))]
 pub struct Spinner<Renderer = crate::Renderer>
 where
     Renderer: core::Renderer,
