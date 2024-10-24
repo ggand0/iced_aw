@@ -32,7 +32,6 @@ selection_list = []
 split = []
 menu = []
 quad = []
-spinner = []
 context_menu = []
 
 default = [
@@ -54,7 +53,6 @@ default = [
     "menu",
     "quad",
     "context_menu",
-    "spinner",
     "cupertino",
 ]
 
@@ -100,7 +98,6 @@ members = [
     "examples/split",
     "examples/split_scroller",
     "examples/menu",
-    "examples/spinner",
     "examples/context_menu",
     "examples/WidgetIDReturn"
 ]

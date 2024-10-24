@@ -52,12 +52,6 @@ pub mod menu_bar;
 #[cfg(feature = "menu")]
 pub use menu_bar::MenuBarStyle;
 
-#[cfg(feature = "spinner")]
-#[cfg(not(target_arch = "wasm32"))]
-pub mod spinner;
-#[cfg(feature = "spinner")]
-#[cfg(not(target_arch = "wasm32"))]
-pub use spinner::SpinnerStyle;
 
 #[cfg(feature = "context_menu")]
 pub mod context_menu;
