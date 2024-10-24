@@ -29,6 +29,7 @@ pub trait StyleSheet {
     fn appearance(&self, style: &Self::Style) -> Appearance;
 }
 
+#[cfg(not(target_arch = "wasm32"))]
 impl StyleSheet for Theme {
     type Style = SpinnerStyle;
 

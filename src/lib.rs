@@ -149,6 +149,7 @@ mod platform {
     pub use crate::native::helpers;
     #[doc(no_inline)]
     #[cfg(feature = "spinner")]
+    #[cfg(not(target_arch = "wasm32"))]
     pub use {crate::native::spinner, crate::style::SpinnerStyle, spinner::Spinner};
 
     #[doc(no_inline)]
