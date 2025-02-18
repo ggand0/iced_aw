@@ -67,14 +67,14 @@ num-format = { version = "0.4.4", optional = true }
 num-traits = { version = "0.2.19", optional = true }
 time = { version = "0.3.36", features = ["local-offset"], optional = true }
 #iced_fonts = "0.1.1"
-iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", rev="2faf06e322c12a9212dc270d7e327950f138686e" }
+iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", rev="6c6bb1a2a24cde54798a0632f465d22c27f58d85" }
 
 [dependencies.iced]
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
 ##version = "0.13.1"
 git = "https://github.com/ggand0/iced.git"
-rev = "69a425da03f227a8fd0e654eeb1e2d8c271e4411"
+rev = "ea76d7320e0967e2ec3d028d3d833c1d9ce53b58"
 default-features = false
 features = ["advanced", "wgpu"]
 
@@ -90,7 +90,7 @@ rand = "0.8.5"            # For wrap example
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
 ##version = "0.13.0"
 git = "https://github.com/ggand0/iced.git"
-rev = "69a425da03f227a8fd0e654eeb1e2d8c271e4411"
+rev = "ea76d7320e0967e2ec3d028d3d833c1d9ce53b58"
 #default-features = false
 features = ["advanced", "wgpu"]
 
