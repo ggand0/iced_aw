@@ -67,16 +67,26 @@ num-format = { version = "0.4.4", optional = true }
 num-traits = { version = "0.2.19", optional = true }
 time = { version = "0.3.36", features = ["local-offset"], optional = true }
 #iced_fonts = "0.1.1"
-iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", rev="6c6bb1a2a24cde54798a0632f465d22c27f58d85" }
+#iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", rev="6c6bb1a2a24cde54798a0632f465d22c27f58d85" }
+# Use local iced_fonts
+iced_fonts = { path = "../iced_fonts" }
 
 [dependencies.iced]
+# original
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
 ##version = "0.13.1"
+
+# custom iced for viewskater
 git = "https://github.com/ggand0/iced.git"
-rev = "ea76d7320e0967e2ec3d028d3d833c1d9ce53b58"
+branch = "custom-winit-0.13.1"
 default-features = false
 features = ["advanced", "wgpu"]
+
+# for local debugging
+#path = "../iced"
+#default-features = false
+#features = ["advanced", "wgpu"]
 
 [profile.dev.package."*"]
 opt-level = 2
@@ -86,13 +96,22 @@ num-traits = "0.2.19"   # For widget_id_return example
 rand = "0.8.5"            # For wrap example
 
 [dev-dependencies.iced]
+# original
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
 ##version = "0.13.0"
+
+# custom iced for viewskater
 git = "https://github.com/ggand0/iced.git"
-rev = "ea76d7320e0967e2ec3d028d3d833c1d9ce53b58"
-#default-features = false
+branch = "custom-winit-0.13.1"
+default-features = false
 features = ["advanced", "wgpu"]
+
+# for local debugging
+#path = "../iced"
+#default-features = false
+#features = ["advanced", "wgpu"]
+
 
 [dev-dependencies.iced_aw]
 path = "./"
