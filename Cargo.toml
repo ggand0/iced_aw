@@ -66,10 +66,15 @@ itertools = { version = "0.13.0", optional = true }
 num-format = { version = "0.4.4", optional = true }
 num-traits = { version = "0.2.19", optional = true }
 time = { version = "0.3.36", features = ["local-offset"], optional = true }
+# original
 #iced_fonts = "0.1.1"
-#iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", rev="6c6bb1a2a24cde54798a0632f465d22c27f58d85" }
-# Use local iced_fonts
-iced_fonts = { path = "../iced_fonts" }
+
+# Custom iced_fonts that refer to custom iced_core
+# Track latest iced_fonts from custom-iced-0.1.1 branch
+iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", branch = "custom-iced-0.1.1" }
+
+# For debugging with local iced_fonts
+#iced_fonts = { path = "../iced_fonts" }
 
 [dependencies.iced]
 # original
