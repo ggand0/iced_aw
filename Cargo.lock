@@ -376,6 +376,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "color_quant"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+
+[[package]]
 name = "com"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1092,7 +1098,7 @@ dependencies = [
 [[package]]
 name = "iced"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "iced_core",
  "iced_futures",
@@ -1121,7 +1127,7 @@ dependencies = [
 [[package]]
 name = "iced_core"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "bitflags 2.6.0",
  "bytes",
@@ -1140,7 +1146,7 @@ dependencies = [
 [[package]]
 name = "iced_fonts"
 version = "0.1.1"
-source = "git+https://github.com/ggand0/iced_fonts.git?branch=custom-0.1.1#63592406aeb28d7a561ca57464a440c39ff5f44c"
+source = "git+https://github.com/ggand0/iced_fonts.git?branch=perf-linux#f4dc2734743e617593e20471f630eb53b2027848"
 dependencies = [
  "iced_core",
 ]
@@ -1148,7 +1154,7 @@ dependencies = [
 [[package]]
 name = "iced_futures"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "futures",
  "iced_core",
@@ -1174,7 +1180,7 @@ dependencies = [
 [[package]]
 name = "iced_graphics"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "bitflags 2.6.0",
  "bytemuck",
@@ -1194,7 +1200,7 @@ dependencies = [
 [[package]]
 name = "iced_renderer"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "iced_graphics",
  "iced_tiny_skia",
@@ -1206,7 +1212,7 @@ dependencies = [
 [[package]]
 name = "iced_runtime"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "bytes",
  "iced_core",
@@ -1218,7 +1224,7 @@ dependencies = [
 [[package]]
 name = "iced_tiny_skia"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "bytemuck",
  "cosmic-text",
@@ -1233,7 +1239,7 @@ dependencies = [
 [[package]]
 name = "iced_wgpu"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "bitflags 2.6.0",
  "bytemuck",
@@ -1242,6 +1248,7 @@ dependencies = [
  "guillotiere",
  "iced_glyphon",
  "iced_graphics",
+ "image",
  "log",
  "lyon",
  "once_cell",
@@ -1253,7 +1260,7 @@ dependencies = [
 [[package]]
 name = "iced_widget"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "iced_renderer",
  "iced_runtime",
@@ -1267,7 +1274,7 @@ dependencies = [
 [[package]]
 name = "iced_winit"
 version = "0.13.5"
-source = "git+https://github.com/ggand0/iced.git?branch=custom-0.13#d8c9c8dc2c32df407b88f393b0a58bb45431f42b"
+source = "git+https://github.com/ggand0/iced.git?branch=perf-linux#2cbb65b736621f4c35fbafd441b8d8524e384491"
 dependencies = [
  "iced_futures",
  "iced_graphics",
@@ -1281,6 +1288,18 @@ dependencies = [
  "winapi",
  "window_clipboard",
  "winit",
+]
+
+[[package]]
+name = "image"
+version = "0.24.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5690139d2f55868e080017335e4b94cb7414274c74f1669c84fb5feba2c9f69d"
+dependencies = [
+ "bytemuck",
+ "byteorder",
+ "color_quant",
+ "num-traits",
 ]
 
 [[package]]
