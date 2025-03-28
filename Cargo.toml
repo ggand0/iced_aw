@@ -71,7 +71,7 @@ time = { version = "0.3.36", features = ["local-offset"], optional = true }
 
 # Custom iced_fonts that refer to custom iced_core
 # Track latest iced_fonts from custom-iced-0.1.1 branch
-iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", branch = "custom-0.1.1" }
+iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", tag = "custom-0.1.1-vsk-0.2.1" }
 
 [dependencies.iced]
 # original
@@ -81,7 +81,7 @@ iced_fonts = { git = "https://github.com/ggand0/iced_fonts.git", branch = "custo
 
 # custom iced for viewskater
 git = "https://github.com/ggand0/iced.git"
-branch = "custom-0.13"
+tag = "custom-0.13-vsk-0.2.1"
 default-features = false
 features = ["advanced", "wgpu"]
 
@@ -100,7 +100,7 @@ rand = "0.8.5"            # For wrap example
 
 # custom iced for viewskater
 git = "https://github.com/ggand0/iced.git"
-branch = "custom-0.13"
+tag = "custom-0.13-vsk-0.2.1"
 default-features = false
 features = ["advanced", "wgpu"]
 
